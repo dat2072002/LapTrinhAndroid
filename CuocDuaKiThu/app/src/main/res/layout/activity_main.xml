@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <CheckBox
+        android:id="@+id/checkboxThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkboxTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkboxThree"
+        android:layout_marginBottom="60dp"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkboxOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkboxTwo"
+        android:layout_marginBottom="63dp"></CheckBox>
+
+    <SeekBar
+        android:id="@+id/seekbarThree"
+        android:layout_width="360dp"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/checkboxThree"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/poke3" />
+
+    <SeekBar
+        android:id="@+id/seekbarTwo"
+        android:layout_width="353dp"
+        android:layout_height="73dp"
+        android:layout_above="@id/seekbarThree"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toRightOf="@id/checkboxTwo"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/poke2" />
+
+    <SeekBar
+        android:id="@+id/seekbarOne"
+        android:layout_width="359dp"
+        android:layout_height="69dp"
+        android:layout_above="@id/seekbarTwo"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toRightOf="@id/checkboxOne"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/poke1" />
+
+    <ImageView
+        android:layout_width="363dp"
+        android:layout_height="192dp"
+        android:layout_above="@+id/buttomPlay"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="93dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textviewDiemSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="100"
+        android:textColor="#ff00"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/buttomPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@drawable/play" />
+</RelativeLayout>
+
+
+
+
